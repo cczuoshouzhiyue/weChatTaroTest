@@ -1,0 +1,111 @@
+.info{
+  width: 95%;
+  margin-left: 2.5%;
+  .info-header {
+    .topic-up {
+      background-color: #f48fb1;
+      color:#FFFFFF;
+      padding:2PX 4PX;
+      text-align: center;
+      border-radius: 2PX;
+      min-width: 30PX;
+      font-size:13PX;
+    }
+    .blue{
+      background-color: #03a9f4;
+    }
+    .topic-info-header-pie{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 13PX;
+      margin-top: 5PX;
+      color:#757575;
+      margin-bottom: 15PX;
+    }
+  }
+  .topic-info-body{
+    font-size: 12PX;
+  }
+}
+.replies{
+  width: 95%;
+  margin-left: 2.5%;
+}
+.replies-info{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15PX;
+  .replies-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    font-size: 12PX;
+    .replies-author {
+      flex: 0 30PX;
+      width: 30PX;
+      .topicinfo-repliy-image{
+        width: 30PX;
+        height: 30PX;
+        border-radius: 50%;
+      }
+    }
+    .replies-content {
+      flex: 1;
+      overflow: hidden;
+      padding-left: 5PX;
+      padding-right: 5PX;
+      .floor {
+        padding-left: 5PX;
+        padding-right: 5PX;
+      }
+    }
+    .replies-right{
+      flex: 0 60px;
+    }
+
+  }
+  .replies-right {
+    display: flex;
+    flex-direction: row;
+    .topicinfo-repliy-image{
+      width:20PX;
+      height: 20PX;
+    }
+    .topicinfo-repliy-text{
+      padding-right: 5PX;
+      padding-left: 5PX;
+    }
+  }
+}
+
+
+.reply-content{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: #FFFFFF;
+  .reply-content-text{
+    width: 98%;
+    margin-top: 10PX;
+    padding: 10PX;
+    margin-bottom: 15PX;
+  }
+  .reply-content-button{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    button {
+      width: 30%;
+    }
+    button:last-of-type{
+      background-color: #ff4081;
+      color:#FFFFFF;
+    }
+  }
+}

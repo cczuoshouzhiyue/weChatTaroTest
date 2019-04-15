@@ -1,0 +1,45 @@
+.menu{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50PX;
+  .menu-headers{
+    position: fixed;
+    top: 0;
+    background: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    image{
+      width: 28PX;
+      height: 28PX;
+    }
+  }
+
+}
+.ml{
+  margin-left: 10PX;
+}
+.mr{
+  margin-right: 10PX;
+}
+.user-at-drawer{
+  position: absolute;
+}
+/* 根据第三方字体图标库编写 */
+/* 举例：fa 就是 prefixClass 的值，下面的的图标 css class 命名都要用 fa- 开头  */
+.fa {
+  display: inline-block;
+  /* 以下的 font 与上面 @font-face 的 font-family 要一致*/
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-clock:before {
+  content: "\f00c";
+}
